@@ -3,6 +3,8 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
+
+// GET all categories
 router.get('/', async (req, res) => {
   try {
     const categories = await Category.findAll({
@@ -14,6 +16,7 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+//Get one category by its `id` value
 router.get('/:id', async (req, res) => {
   try {
     const category = await Category.findByPk(req.params.id, {
@@ -30,7 +33,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-
+// POST a new category
 router.post('/', async (req, res) => {
   try {
     const category = await Category.create(req.body);
@@ -41,7 +44,7 @@ router.post('/', async (req, res) => {
   }
 });
   // create a new category
-
+// PUT (update) a category by its `id` value
 router.put('/:id', async (req, res) => {
   try {
     const category = await Category.update(req.body, {
@@ -54,8 +57,9 @@ router.put('/:id', async (req, res) => {
     console.error(err);
     res.status(400).json(err);
   }
-}); 
-
+});
+ 
+ // delete a category by its `id` value
 router.delete('/:id', async (req, res) => {
   try {
     const category = await Category.destroy({
@@ -69,6 +73,6 @@ router.delete('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-  // delete a category by its `id` value
+  
 
 module.exports = router;

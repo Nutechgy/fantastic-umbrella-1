@@ -40,7 +40,14 @@ Product.init(
         model: 'category',
         key: 'id'
       }
+    },
+    tag_id: { // Define tag_id column
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'tag',
+        key: 'id'
     } 
+  }
   },
   {
     sequelize,
