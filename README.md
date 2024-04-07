@@ -1,4 +1,5 @@
 E-Commerce Backend using Express.js and Sequelize
+
 This project aims to provide a robust backend solution for an e-commerce website, leveraging the latest technologies. With this backend, your company can effectively compete with other e-commerce platforms by offering seamless operations and excellent user experience.
 
 Features
@@ -20,4 +21,4 @@ PUT Product: http://localhost:3001/api/products/:id
 DELETE Tag: http://localhost:3001/api/tags/:id
 
 Walkthrough Video
-Watch a walkthrough video demonstrating the functionality of the e-commerce backend here.
+Watch a walkthrough video demonstrating the functionality of the e-commerce backend here.<video controls src="20240407-0402-53.3672554.mp4" title="Title"></video>
