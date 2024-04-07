@@ -26,5 +26,5 @@ DELETE Tag: http://localhost:3001/api/tags/:id
 
 Walkthrough Video
 Watch a walkthrough video demonstrating the functionality of the e-commerce backend here.<video controls src="20240407-0402-53.3672554.mp4" title="Title"></video>
-"C:\Users\terem\OneDrive\Documents\fantastic-umbrella\20240407-0402-53.3672554.mp4"
+
 https://1drv.ms/v/s!Alsgg17rEtJzg_MYvSM-BUPe2135xg?e=qFTjsO
